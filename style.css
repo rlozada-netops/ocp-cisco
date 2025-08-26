@@ -1,0 +1,170 @@
+/* --- Reset y Estilos Globales --- */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* --- Encabezado y Navegación --- */
+header {
+    background: #ffffff;
+    color: #333;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #005b96; /* Azul corporativo */
+}
+
+.tech-text {
+    color: #555;
+    font-weight: 400;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+header nav a:hover {
+    color: #007bff;
+}
+
+/* --- Sección Hero --- */
+.hero {
+    background: linear-gradient(rgba(0, 91, 150, 0.7), rgba(0, 91, 150, 0.7)), url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.highlight {
+    color: #a4d4ff; /* Un azul más claro para resaltar */
+}
+
+.cta-button {
+    background: #ff7f00; /* Naranja como color de acento */
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #e67300;
+}
+
+/* --- Sección de Soluciones --- */
+.solutions {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.solutions h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.solution-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    flex-basis: 30%;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: #005b96;
+}
+
+/* --- Pie de Página --- */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.partner-logos {
+    display: flex;
+    align-items: center;
+}
+
+.partner-logos span {
+    margin-right: 15px;
+}
+
+.cisco-logo {
+    height: 25px; /* Ajusta el tamaño según sea necesario */
+    filter: brightness(0) invert(1); /* Pone el logo de Cisco en blanco */
+}
